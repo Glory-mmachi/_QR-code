@@ -1,9 +1,7 @@
 "use client";
 
-import "./globals.css";
 import { useTheme } from "./components/contextApi";
 import { useQRCode } from "next-qrcode";
-
 
 export default function Home() {
   const { Canvas } = useQRCode();
@@ -11,9 +9,11 @@ export default function Home() {
 
   return (
     <>
-      <div className="App bg-slate-700">
-        <h1 className="text-7xl " style={{ color: "#964B00" }}>{val} #TOBE4EVER</h1>
-        <Canvas 
+      <div>
+        <h1 className=" text-[#964B00]">
+          Welcome! {val} #TOBE4EVER
+        </h1>
+        <Canvas
           text={`https://qr-code-rust-two.vercel.app/access/${val}`}
           options={{
             errorCorrectionLevel: "M",
