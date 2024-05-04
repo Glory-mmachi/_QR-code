@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from "react";
 const ThemeContext = createContext();
 
 export default function ThemeProvider({ children }) {
-  const [text, setText] = useState("Benita");
+  const [text, setText] = useState("");
 
   function handleChange(e) {
     setText(e.target.value);

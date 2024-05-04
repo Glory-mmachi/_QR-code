@@ -13,7 +13,7 @@ export default function Home() {
       <div>
         <h1>QR Code Generator</h1>
         <Canvas
-          text={`http://localhost:3000/access/${text}`}
+          text={`www.https://qr-code-rust-two.vercel.app/access/${text}`}
           
           options={{
             errorCorrectionLevel: "M",
