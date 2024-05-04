@@ -1,8 +1,6 @@
 "use client";
 
 import "./globals.css";
-
-// import { useTheme } from "./ContextApi";
 import { useTheme } from "./components/contextApi";
 import { useQRCode } from "next-qrcode";
 
