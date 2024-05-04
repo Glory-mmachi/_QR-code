@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from "react";
 const ThemeContext = createContext();
 
 export default function ThemeProvider({ children }) {
-  const [text, setText] = useState("");
+  const [val, setVal] = useState("Jude");
 
   function handleChange(e) {
     setText(e.target.value);
@@ -15,8 +15,8 @@ export default function ThemeProvider({ children }) {
     <ThemeContext.Provider
       value={{
         handleChange,
-        text,
-        setText,
+        val,
+        setVal,
       }}
     >
       {children}
