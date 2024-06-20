@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col justify-center items-center h-screen text-2xl  text-[#964B00]">
-        <h1>Welcome {val}!</h1>
+        <h1> #TOBE4EVER</h1>
         <Canvas
           text={`https://qr-code-rust-two.vercel.app/access/${val}`}
           options={{
@@ -24,7 +24,12 @@ export default function Home() {
             },
           }}
         />
-        <h1> #TOBE4EVER</h1>
+
+        <input
+          type="text"
+          onChange={handleChange}
+          className="border border-red-400"
+        />
       </div>
     </>
   );
