@@ -20,7 +20,7 @@ export default function AceessDetails({ params }) {
             {" "}
             Welcome{" "}
             <span className="pl-2 uppercase text-[#db944c]">
-              {params.accessId}! 
+              {params.accessId.replace("%20", " ")}! 
             </span>
           </h1>
         </div>

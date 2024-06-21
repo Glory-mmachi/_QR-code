@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from "react";
 const ThemeContext = createContext();
 
 export default function ThemeProvider({ children }) {
-  const [val, setVal] = useState('');
+  const [val, setVal] = useState("");
 
   function handleChange(e) {
     setVal(e.target.value);
