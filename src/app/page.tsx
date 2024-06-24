@@ -125,6 +125,17 @@ const names9 = [
   "Aaron",
   "Kwado",
 ];
+const names10 = [
+  "Chisom Umekesiobi",
+  "Bro Emmanuel",
+  "Bro John",
+  "Nancy",
+  "Aunty Faith",
+  "Aunty Blessing",
+  "Halima",
+  "Balikis"
+];
+
 
 // Now each array (names1 to names9) contains a distinct set of names
 
@@ -135,7 +146,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-wrap text-center justify-center items-center h-screen text-2xl  text-[#964B00]">
-        {names9.map((name, index) => {
+        {names10.map((name, index) => {
           return (
             <div key={index} className=" flex flex-col">
               <h1> #TOBE4EVER </h1>
@@ -144,7 +155,7 @@ export default function Home() {
               </p>
               <h2>{name}</h2>
               <Canvas
-                text={`https://qr-code-rust-two.vercel.app/access/${'sam'}`}
+                text={`https://qr-code-rust-two.vercel.app/access/${name}`}
                 options={{
                   errorCorrectionLevel: "M",
                   margin: 3,
