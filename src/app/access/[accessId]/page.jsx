@@ -1,5 +1,5 @@
 import Image from "next/image";
-import background from "../../../../public/B&T.jpg";
+import background from "../../../../public/B&T.png";
 import background1 from "../../../../public/Benny BG Access.jpg";
 
 export default function AccessDetails({ params }) {
